@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const mode = 'dev'
+const mode = process.env.WEBPACK_ENV || 'product'
 const decorate = require(`./.webpack/${mode}`)
 
 module.exports = () => {

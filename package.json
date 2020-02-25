@@ -4,6 +4,7 @@
   "scripts": {
     "test": "npx jest",
     "build": "npx webpack",
+    "build:dev": "export WEBPACK_ENV=dev&&npm run build",
     "start": "npx http-server dist"
   },
   "dependencies": {
